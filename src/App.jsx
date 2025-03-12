@@ -11,7 +11,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 export default class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <><BrowserRouter>
         <><Navbar /></>
 
         <Routes>
@@ -39,6 +39,8 @@ export default class App extends Component {
         </Routes>
 
       </BrowserRouter>
+      <p>My Secrete key: {import.meta.env.VITE_KEY}</p>
+      </>
     )
   }
 }
