@@ -16,8 +16,6 @@ export class News extends Component {
   async componentDidMount() {
 
     let url = `https://saurav.tech/NewsAPI/top-headlines/category/${this.props.purl}/in.json` //saurav news api
-    // let url = "https://newsdata.io/api/1/news?apikey=pub_691986987eb0604369b187b843b61c0d90737&q=Cricket"; //NewsData API
-    // let url = `https://newsapi.org/v2/everything?q=${this.props.purl}&sortBy=publishedAt&apiKey=4a043c5a34fc4c178ee6ee481b4eec1e&page=1&pagesize=${this.props.psize}` //newsapi org
 
     let data = await fetch(url);
     let parsedata = await data.json();
