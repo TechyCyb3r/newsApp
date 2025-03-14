@@ -27,42 +27,42 @@ export class News extends Component {
     })
   }
 
-  //handle next button
-  next = async () => {
+  // //handle next button
+  // next = async () => {
 
-    (this.state.page + 1 > Math.ceil(this.state.articles.totalResults / 20)) ? alert("No more news")
-      :
-      this.setState({
-        ...this.state,
-        page: this.state.page + 1,
-        loading: true,
-      })
-    let url = `https://saurav.tech/NewsAPI/top-headlines/category/${this.props.purl}/in.json`; //newsapi org
-    let data = await fetch(url);
-    let parsedata = await data.json();
-    this.setState({
-      ...this.state,
-      articles: parsedata.articles,
-      loading: false
-    })
-  }
+  //   (this.state.page + 1 > Math.ceil(this.state.articles.totalResults / 20)) ? alert("No more news")
+  //     :
+  //     this.setState({
+  //       ...this.state,
+  //       page: this.state.page + 1,
+  //       loading: true,
+  //     })
+  //   let url = `https://saurav.tech/NewsAPI/top-headlines/category/${this.props.purl}/in.json`; //newsapi org
+  //   let data = await fetch(url);
+  //   let parsedata = await data.json();
+  //   this.setState({
+  //     ...this.state,
+  //     articles: parsedata.articles,
+  //     loading: false
+  //   })
+  // }
 
-  //handle previous button
-  previous = async () => {
-    this.setState({
-      ...this.state,
-      page: this.state.page - 1,
-      loading: true
-    })
-    let url = `https://saurav.tech/NewsAPI/top-headlines/category/${this.props.purl}/in.json`; //newsapi org
-    let data = await fetch(url);
-    let parsedata = await data.json();
-    this.setState({
-      ...this.state,
-      articles: parsedata.articles,
-      loading: false
-    })
-  }
+  // //handle previous button
+  // previous = async () => {
+  //   this.setState({
+  //     ...this.state,
+  //     page: this.state.page - 1,
+  //     loading: true
+  //   })
+  //   let url = `https://saurav.tech/NewsAPI/top-headlines/category/${this.props.purl}/in.json`; //newsapi org
+  //   let data = await fetch(url);
+  //   let parsedata = await data.json();
+  //   this.setState({
+  //     ...this.state,
+  //     articles: parsedata.articles,
+  //     loading: false
+  //   })
+  // }
 
 
   render() {
@@ -92,10 +92,13 @@ export class News extends Component {
                 </div>
               })
           }
-          <div className="container d-flex justify-content-between">
-            <button type="button" disabled={this.state.page <= 1} onClick={this.previous} className="btn btn-dark">&larr; Previous</button>
-            <button type="button" onClick={this.next} className="btn btn-dark">&rarr; Next</button>
-          </div>
+
+          //If want to try to add next and previous button
+          // <div className="container d-flex justify-content-between">
+          //   <button type="button" disabled={this.state.page <= 1} onClick={this.previous} className="btn btn-dark">&larr; Previous</button>
+          //   <button type="button" onClick={this.next} className="btn btn-dark">&rarr; Next</button>
+          // </div>
+
         </div>
       </div>
     )
