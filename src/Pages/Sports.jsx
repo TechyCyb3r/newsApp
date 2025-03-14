@@ -93,11 +93,11 @@ export class News extends Component {
               })
           }
 
-          //If want to try to add next and previous button
+          {/* //If want to try to add next and previous button
           // <div className="container d-flex justify-content-between">
           //   <button type="button" disabled={this.state.page <= 1} onClick={this.previous} className="btn btn-dark">&larr; Previous</button>
           //   <button type="button" onClick={this.next} className="btn btn-dark">&rarr; Next</button>
-          // </div>
+          // </div> */}
 
         </div>
       </div>
