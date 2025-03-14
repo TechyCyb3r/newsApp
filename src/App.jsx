@@ -15,27 +15,27 @@ export default class App extends Component {
         <><Navbar /></>
 
         <Routes>
-          <Route path="/" element={<Home purl={"everything"} psize={15} />} />
+          <Route path="/" element={<Home purl={"general"} />} />
         </Routes>
 
         <Routes>
-          <Route path="/sports" element={<Sports purl={"sports"} psize={18} />} />
+          <Route path="/category/sports" element={<Sports purl={"sports"} />} />
         </Routes>
 
         <Routes>
-          <Route path="/cricket" element={<Cricket purl={"cricket"} psize={18} />} />
+          <Route path="/category/health" element={<Cricket purl={"health"} />} />
         </Routes>
 
         <Routes>
-          <Route path="/hockey" element={<Hockey purl={"hockey"} psize={18} />} />
+          <Route path="/category/business" element={<Hockey purl={"business"} />} />
         </Routes>
 
         <Routes>
-          <Route path="/dancer" element={<Dancer purl={"dancer"} psize={18} />} />
+          <Route path="/category/science" element={<Dancer purl={"science"} />} />
         </Routes>
 
         <Routes>
-          <Route path="/singer" element={<Singer purl={"singer"} psize={18} />} />
+          <Route path="/category/technology" element={<Singer purl={"technology"} />} />
         </Routes>
 
       </BrowserRouter>

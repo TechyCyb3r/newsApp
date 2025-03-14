@@ -19,27 +19,20 @@ export class Navbar extends Component {
                                 <li className="nav-item">
                                     <Link className="nav-link" aria-current="page" to="/">Home</Link>
                                 </li>
-
-                                <div className="collapse navbar-collapse" id="navbarNavDropdown">
-                                    <ul className="navbar-nav">
-                                        <li className="nav-item dropdown">
-                                            <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Sports
-                                            </a>
-                                            <ul className="dropdown-menu dropdown-menu-dark">
-                                                <li><Link className="dropdown-item" to="/sports">Top Headings</Link></li>
-                                                <li><Link className="dropdown-item" to="/cricket">Cricket</Link></li>
-                                                <li><Link className="dropdown-item" to="/hockey">Hockey</Link></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                                
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/singer">Singer</Link>
+                                    <Link className="nav-link" aria-current="page" to="/category/sports">Sports</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/dancer">Dancer</Link>
+                                    <Link className="nav-link" to="/category/health">Health</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/category/business">Business</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/category/science">Science</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/category/technology">Technology</Link>
                                 </li>
                             </ul>
                         </div>
