@@ -5,7 +5,7 @@ export class NewsItem extends Component {
     let { title, description, imgUrl, newsUrl } = this.props;
     return (
       <>
-        <div className="card d-flex flex-column" style={{ width: "19rem, height:40px", marginTop: "20px", alignContent: "space-between", alignItems: "center", justifyContent: "center", display:"flex", flexWrap:"wrap" }}>
+        <div className="card" style={{ width: "19rem, height:40px", marginTop: "20px", alignContent: "space-between", alignItems: "center", justifyContent: "center", display:"grid", flexWrap:"wrap"}}>
           <div style={{ width: "100%", maxHeight: "165px", height: "165px", overflow: "hidden", display: "grid", alignContent: "center", alignItems: "center", justifyItems: "center", justifyContent: "center" }}>
             <img src={imgUrl} className="card-img-top" alt="..." />
           </div>
