@@ -67,8 +67,8 @@ export class News extends Component {
 
   render() {
     return (
-      <div className="container my-3">
-        <h1 className="text-center" style={{marginTop:"80px"}}>MyNewsApp - Top news Headlines</h1>
+      <div className="container text-center my-3" style={{marginTop: "75px"}}>
+        <h1 className="headingTitle" style={{marginTop:"80px"}}>MyNewsApp - Top news Headlines</h1>
         <div className="row my-3">
           {
             this.state.loading ? (
@@ -78,6 +78,7 @@ export class News extends Component {
               </div>
             </div>
             ) :
+            
               this.state.articles && this.state.articles.map((element) => {
                 return <div className="col-md-4 my-3" key={element.url}>
                   <NewsItem title={(element.title.length > 45) ? element.title.slice(0, 39) : element.title}
