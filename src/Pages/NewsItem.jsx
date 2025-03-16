@@ -6,7 +6,7 @@ export class NewsItem extends Component {
     let { title, description, imgUrl, newsUrl } = this.props;
     return (
       <>
-        <div className={`card` } style={{ width: "19rem, height:40px", marginTop: "20px", alignContent: "space-between", alignItems: "center", justifyContent: "center"}}>
+        <div className={`card ${Styles.fcard}` } style={{ width: "19rem, height:40px", marginTop: "20px", alignContent: "space-between", alignItems: "center", justifyContent: "center"}}>
 
           <div style={{ width: "100%", height: "165px", overflow: "hidden", alignContent: "center", alignItems: "center", justifyItems: "center", justifyContent: "center" }}>
             <img src={imgUrl} className="card-img-top" alt="..." />

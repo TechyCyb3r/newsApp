@@ -3,6 +3,9 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        margin: 10px auto;
+        flex-direction: column;
+        width: 100%;
         justify-content: center;
     }
 }   
