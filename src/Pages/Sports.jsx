@@ -68,8 +68,9 @@ export class News extends Component {
   render() {
     return (
       <div className="container-fluid text-center my-3" style={{ marginTop: "75px" }}>
-        <h1 className="headingTitle h2 h-md-1" style={{ marginTop: "80px" }}> <strong>MyNewsApp - Top News Headlines</strong></h1>
-        <div className="row my-3">
+        <h1 className="headingTitle h2 h-md-1" style={{ marginTop: "80px" }}>MyNewsApp - Top News Headlines</h1>
+
+        <div className="d-flex flex-wrap justify-content-center my-3">
           {
             this.state.loading ? (
               <div className="d-flex justify-content-center align-items-center" style={{ minHeight: "50vh" }}>
@@ -80,7 +81,7 @@ export class News extends Component {
             ) :
               this.state.articles && this.state.articles.map((element) => {
                 return (
-                  <div className="col-12 col-sm-6 col-md-4 my-3" key={element.url}>
+                  <div className="d-flex justify-content-center my-3" style={{ width: "100%", maxWidth: "400px" }} key={element.url}>
                     <NewsItem
                       title={(element.title.length > 45) ? element.title.slice(0, 39) : element.title}
                       description={
@@ -108,7 +109,9 @@ export class News extends Component {
             Next &rarr;
           </button>
         </div> */}
+        
       </div>
+
 
     )
   }
