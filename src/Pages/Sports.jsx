@@ -68,7 +68,7 @@ export class News extends Component {
   render() {
     return (
       <div className="container-fluid text-center my-3" style={{ marginTop: "75px" }}>
-        <h1 className="headingTitle h2 h-md-1" style={{ marginTop: "80px" }}>MyNewsApp - Top News Headlines</h1>
+        <h1 className="headingTitle h2 h-md-1" style={{ marginTop: "80px" }}> <strong>MyNewsApp - Top News Headlines</strong></h1>
         <div className="row my-3">
           {
             this.state.loading ? (
