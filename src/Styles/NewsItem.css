@@ -1,0 +1,8 @@
+@media screen and (max-width: 768px) {
+    .fcard{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}

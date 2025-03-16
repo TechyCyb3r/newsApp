@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
+import 
 
 export class NewsItem extends Component {
   render() {
     let { title, description, imgUrl, newsUrl } = this.props;
     return (
       <>
-        <div className="card" style={{ width: "19rem, height:40px", marginTop: "20px", alignContent: "space-between", alignItems: "center", justifyContent: "center", display:"flex", flexWrap:"nowrap"}}>
+        <div className={`card ${Style.fcard}` } style={{ width: "19rem, height:40px", marginTop: "20px", alignContent: "space-between", alignItems: "center", justifyContent: "center", display:"flex", flexWrap:"nowrap"}}>
 
           <div style={{ width: "100%", maxHeight: "165px", height: "165px", overflow: "hidden", display: "flex",  flexWrap:"nowrap", alignContent: "center", alignItems: "center", justifyItems: "center", justifyContent: "center" }}>
             <img src={imgUrl} className="card-img-top" alt="..." />
