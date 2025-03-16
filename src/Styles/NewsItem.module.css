@@ -1,7 +1,6 @@
 @media (max-width: 768px) {
     .fcard{
         display: flex;
-        width:100% !important;
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
