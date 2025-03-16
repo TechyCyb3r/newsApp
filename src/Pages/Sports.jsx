@@ -107,8 +107,8 @@ export class News extends Component {
           <button type="button" onClick={this.next} className="btn btn-dark btn-sm">
             Next &rarr;
           </button>
-        </div>
-      </div> */}
+        </div> */}
+      </div>
 
     )
   }
