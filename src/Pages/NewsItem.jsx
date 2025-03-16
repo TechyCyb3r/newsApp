@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Styles from './NewsItem.module.css'
+import Styles from '../Styles/NewsItem.module.css'
 
 export class NewsItem extends Component {
   render() {
