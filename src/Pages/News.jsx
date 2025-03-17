@@ -68,7 +68,7 @@ export class News extends Component {
   render() {
     return (
       <div className="container-fluid text-center my-3" style={{ marginTop: "75px" }}>
-        <h1 className="headingTitle h2 h-md-1" style={{ marginTop: "80px" }}>MyNewsApp - Top News Headlines</h1>
+        <h1 className="headingTitle h2 h-md-1" style={{ marginTop: "80px" }}><strong>MyNewsApp - Top {this.props.headline}</strong></h1>
 
         <div className="d-flex flex-wrap justify-content-center gap-4 my-3">
           {

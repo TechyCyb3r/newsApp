@@ -15,27 +15,27 @@ export default class App extends Component {
         <><Navbar /></>
 
         <Routes>  
-          <Route path="/" element={<News purl={"general"} />} />
+          <Route path="/" element={<News purl={"general"} headline={"News Headlines"} />} />
         </Routes>
 
         <Routes>
-          <Route path="/category/sports" element={<News purl={"sports"} />} />
+          <Route path="/category/sports" element={<News purl={"sports"}  headline={"Sports Headlines"}/>} />
         </Routes>
 
         <Routes>
-          <Route path="/category/health" element={<News purl={"health"} />} />
+          <Route path="/category/health" element={<News purl={"health"}  headline={"Health Headlines"}/>} />
         </Routes>
 
         <Routes>
-          <Route path="/category/business" element={<News purl={"business"} />} />
+          <Route path="/category/business" element={<News purl={"business"}  headline={"Business Headlines"}/>} />
         </Routes>
 
         <Routes>
-          <Route path="/category/science" element={<News purl={"science"} />} />
+          <Route path="/category/science" element={<News purl={"science"}  headline={"Science Headlines"}/>} />
         </Routes>
 
         <Routes>
-          <Route path="/category/technology" element={<News purl={"technology"} />} />
+          <Route path="/category/technology" element={<News purl={"technology"}  headline={"Technology Headlines"}/>} />
         </Routes>
 
       </BrowserRouter>
