@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Navbar from './Pages/Navbar'
 import News from './Pages/News'
+import About from './Pages/About'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 export default class App extends Component {
@@ -31,6 +32,10 @@ export default class App extends Component {
 
         <Routes>
           <Route path="/category/technology" element={<News purl={"technology"} headline={"Technology Headlines"} />} />
+        </Routes>
+
+        <Routes>
+          <Route path="/about" element={<About/>} />
         </Routes>
 
       </BrowserRouter>
