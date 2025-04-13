@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-export class NewsItem extends Component {
+export class About extends Component {
   render() {
     return (
       <>
-       <p>Hii</p>
+        <p>Hii</p>
       </>
     )
   }
