@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Navbar from './Pages/Navbar'
 import News from './Pages/News'
 import About from './Pages/About'
+import Footer from './Pages/Footer'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 export default class App extends Component {
@@ -37,6 +38,7 @@ export default class App extends Component {
         <Routes>
           <Route path="/about" element={<About/>} />
         </Routes>
+        <><Footer /></>
 
       </BrowserRouter>
     )
